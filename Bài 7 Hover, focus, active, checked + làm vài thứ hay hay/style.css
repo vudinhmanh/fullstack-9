@@ -1,0 +1,17 @@
+.test p:hover{
+    background-color: red;
+}
+input:focus {
+    outline: none;
+    border: 2px solid blueviolet;
+}
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+a:active {
+    color: black;
+}
+a:visited {
+    color: chocolate;
+}

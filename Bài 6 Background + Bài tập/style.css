@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div#one {
+    border: 6px solid aqua;
+    width: 900px;
+    height: 900px;
+    /* background-color: brown;
+    background-image: url("mu.jpg");
+    background-repeat: no-repeat; */
+    /* background-clip: content-box; */
+    background-origin: border-box;
+    background-attachment: scroll;
+    /* background-position: right 40px bottom 50px; */
+    background: url("mu.jpg") repeat-x blue center center;
+    background-size: cover;
+    background-attachment:scroll;
+}

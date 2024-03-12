@@ -1,0 +1,75 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'SVN-Gilroy', sans-serif;
+    color: black;
+    font-size: 14px;
+}
+.header {
+    margin:20px 0px 20px 0px;
+}
+.header-top {
+    display: flex;
+}
+.header-top__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: calc(100% - 300px);
+}
+.header-top__right {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 800px;
+    position: relative;
+}
+.search {
+    width: 70%;
+}
+.search input {
+    background: #fff;
+    border: 1px solid transparent;
+    outline: none;
+    height: 40px;
+    width: 400px;
+}
+.search button {
+    border: none;
+    height: 40px;
+    width: 85px;
+    position: absolute;
+    background-color: #fcaf17;
+    cursor: pointer;
+}
+.search input:hover {
+    border: 1px solid #fcaf17;
+}
+.map {
+    margin-right: 5px;
+}
+.phone {
+    background: url("https://bizweb.dktcdn.net/100/438/408/themes/936254/assets/call_tb.svg?1709625229687") left center no-repeat;
+    padding-left: 15px;
+    margin-right: 5px;
+}
+a {
+    text-decoration: none;
+}
+.free {
+    background-color:#fcaf17;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}

@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.search-input {
+    background: #fff;
+    border: 1px solid transparent;
+    outline: none;
+    height: 40px;
+    width: 400px;
+}
+.search-btn {
+    border: none;
+    height: 40px;
+    width: 85px;
+    background-color: #fcaf17;
+    cursor: pointer;
+}
+.search input:hover {
+    border: 1px solid #fcaf17;
+}

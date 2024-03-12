@@ -1,0 +1,46 @@
+/* #Login button,
+h1 {
+    color: red;
+    border-radius: 50px;
+} */
+section>button {
+    color: red;
+}
+
+section>div>button {
+    color: blue;
+}
+
+p {
+    border-style: dashed;
+    border-color: red;
+}
+
+[type=text] {
+    color: red;
+}
+
+/* .ten2 {
+    color: red;
+} */
+/* li.ten2 {
+    color: red;
+}
+.ten2.ten2Copy{
+    color: aqua;
+} */
+ul + li {
+    border: 1px solid red;
+}
+ul ~ li {
+    border: 1px solid red;
+}
+/* li:nth-child(2n + 1) {
+    color: red;
+} */
+/* li:nth-child(n + 10) {
+    border: 1px solid red;
+} */
+li:not(.ten2) {
+    border: 1px solid red;
+}       

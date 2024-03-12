@@ -1,0 +1,28 @@
+.test1 {
+    border: 2px solid black;
+    width: 400px;
+    height: 500px;
+    /* background-image: linear-gradient(to right,red 300px, blue); */
+    /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
+    background-image: repeating-linear-gradient(red, yellow 10%);
+}
+.test2 {
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    background-image: radial-gradient(red 50%, white 10%);
+}
+.test3 {
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    background-image: radial-gradient(black 50%, transparent 50%), conic-gradient(red 10%, green 10%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
