@@ -103,7 +103,8 @@ section {
 }
 
 body {
-    line-height: 1;
+    line-height: 1.5;
+    background-color: var(--secondary-color);
 }
 
 ol,
@@ -132,22 +133,24 @@ table {
 :root {
     --primary-color: #222120;
     --secondary-color: #f8f3ed;
-    --gray:#faf5ef;
-    --white:#ffffff;
+    --gray: #faf5ef;
+    --white: #ffffff;
     --primary-font: "DM Sans";
     --secondary-font: "Prata";
 }
+
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
 }
+
 body {
     font-family: var(--primary-font);
     background-color: var(--secondary-color);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     color: var(--primary-color);
-  }
+}
+
 .wrapper {
     max-width: 1600px;
     margin: 0 auto;
@@ -158,62 +161,170 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-.font-contact .font-heading{
+
+.font-contact,
+.font-heading {
     font-family: var(--secondary-font);
     font-weight: 400;
 }
 
+.font-about,
+.project-font {
+    font-family: var(--secondary-font);
+}
+
 .header {
     background-color: var(--primary-color);
+
     &-top {
         padding: 3rem 0;
     }
+
     &-top .container {
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
     }
+
     &-contact {
         font-size: 2.4rem;
-        color: var(--white);
         line-height: calc(32 / 24);
+        color: white;
     }
+
     &-main {
         display: flex;
-        align-items: center;
+        // align-items: center;
         padding-top: 15.5rem;
         gap: 3.2rem;
     }
+
     &-content {
         width: 100%;
         max-width: 72.5rem;
+        margin-top: 5.3rem;
     }
+
     &-heading {
         font-size: 8rem;
         color: white;
-      }
-    &-line {
-        
+        margin-bottom: 6.8rem;
+
+        &-child {
+            visibility: hidden;
+        }
+
+        line-height: 1;
+
+        &>span {
+            display: block;
+        }
     }
-    &-infor {
+
+    &-info {
         width: 100%;
-        max-width: 40rem;
+        max-width: 40.7rem;
+        margin-left: auto;
     }
+
     &-text {
         color: var(--white);
         font-size: 2rem;
         line-height: 3rem;
         margin-top: 4.7rem;
+        opacity: 0.6;
     }
+
+    // &-images {
+    //     transform: translate(0, 78px);
+    //     -webkit-transform: translate(0, 78px);
+    //     -moz-transform: translate(0, 78px);
+    //     -ms-transform: translate(0, 78px);
+    //     -o-transform: translate(0, 78px);
+    // }
 }
+
 .menu {
     display: flex;
     align-items: center;
     gap: 5rem;
+
     &-link {
         font-size: 1.8rem;
         color: var(--gray);
         opacity: 0.4;
         text-decoration: none;
+    }
+}
+
+//about
+.about {
+    margin: 18rem 0 15rem 0;
+
+    // padding: 260px 0px 0px 0px;
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 11rem;
+    }
+
+    &-heading {
+        font-size: 7.2rem;
+        line-height: calc(7.6/7.2);
+        font-family: var(--secondary-font);
+        max-width: 38.8rem;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        width: 100%;
+    }
+
+    &-description {
+        font-size: 2.4rem;
+        font-family: var(--primary-font);
+        width: 100%;
+        max-width: 63.8rem;
+        line-height: calc(3.4/2.4);
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14rem;
+    }
+
+    &-right>p {
+        font-size: 5.2rem;
+        line-height: calc(6.1/5.2);
+        width: 100%;
+        max-width: 51.3rem;
+    }
+}
+
+//project
+.project {
+    margin-top: 12rem;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-heading {
+        font-size: 7rem;
+        width: 100%;
+        max-width: 62rem;
+        line-height: calc(76/70);
+    }
+    &-all {
+        font-size: 2.4rem;
+        width: 100%;
+        max-width: 12.6rem;
+        line-height: calc(30/24);
+        color: var(--primary-color);
     }
 }
