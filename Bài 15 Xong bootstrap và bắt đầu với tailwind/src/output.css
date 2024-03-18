@@ -444,6 +444,11 @@ video {
   display: none;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -578,6 +583,14 @@ video {
   }
 }
 
+.btn {
+  height: 3rem;
+  width: 13rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(103 232 249 / var(--tw-bg-opacity));
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -587,35 +600,12 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .w-full {
   width: 100%;
 }
 
-.basis-1 {
-  flex-basis: 0.25rem;
-}
-
 .basis-1\/4 {
   flex-basis: 25%;
-}
-
-.columns-3 {
-  -moz-columns: 3;
-       columns: 3;
-}
-
-.columns-4 {
-  -moz-columns: 4;
-       columns: 4;
-}
-
-.columns-2 {
-  -moz-columns: 2;
-       columns: 2;
 }
 
 .columns-1 {
@@ -623,36 +613,12 @@ video {
        columns: 1;
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.flex-row-reverse {
-  flex-direction: row-reverse;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
 }
 
-.flex-wrap-reverse {
-  flex-wrap: wrap-reverse;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.rounded-sm {
-  border-radius: 0.125rem;
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .border-2 {
@@ -669,24 +635,8 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-4 {
   padding: 1rem;
-}
-
-@media (min-width: 640px) {
-  .sm\:columns-2 {
-    -moz-columns: 2;
-         columns: 2;
-  }
-
-  .sm\:columns-1 {
-    -moz-columns: 1;
-         columns: 1;
-  }
 }
 
 @media (min-width: 768px) {
@@ -698,25 +648,6 @@ video {
     -moz-columns: 2;
          columns: 2;
   }
-
-  .md\:columns-3 {
-    -moz-columns: 3;
-         columns: 3;
-  }
-
-  .md\:columns-4 {
-    -moz-columns: 4;
-         columns: 4;
-  }
-
-  .md\:columns-1 {
-    -moz-columns: 1;
-         columns: 1;
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (min-width: 1024px) {
@@ -724,23 +655,9 @@ video {
     width: 33.333333%;
   }
 
-  .lg\:columns-2 {
-    -moz-columns: 2;
-         columns: 2;
-  }
-
   .lg\:columns-3 {
     -moz-columns: 3;
          columns: 3;
-  }
-
-  .lg\:columns-4 {
-    -moz-columns: 4;
-         columns: 4;
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -752,9 +669,5 @@ video {
   .xl\:columns-4 {
     -moz-columns: 4;
          columns: 4;
-  }
-
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

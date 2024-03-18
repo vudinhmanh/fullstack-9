@@ -1,0 +1,219 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    --primary-color: #222120;
+    --secondary-color: #f8f3ed;
+    --gray:#faf5ef;
+    --white:#ffffff;
+    --primary-font: "DM Sans";
+    --secondary-font: "Prata";
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--primary-font);
+    background-color: var(--secondary-color);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: var(--primary-color);
+  }
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.font-contact .font-heading{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+
+.header {
+    background-color: var(--primary-color);
+    &-top {
+        padding: 3rem 0;
+    }
+    &-top .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-contact {
+        font-size: 2.4rem;
+        color: var(--white);
+        line-height: calc(32 / 24);
+    }
+    &-main {
+        display: flex;
+        align-items: center;
+        padding-top: 15.5rem;
+        gap: 3.2rem;
+    }
+    &-content {
+        width: 100%;
+        max-width: 72.5rem;
+    }
+    &-heading {
+        font-size: 8rem;
+        color: white;
+      }
+    &-line {
+        
+    }
+    &-infor {
+        width: 100%;
+        max-width: 40rem;
+    }
+    &-text {
+        color: var(--white);
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: 4.7rem;
+    }
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    &-link {
+        font-size: 1.8rem;
+        color: var(--gray);
+        opacity: 0.4;
+        text-decoration: none;
+    }
+}
