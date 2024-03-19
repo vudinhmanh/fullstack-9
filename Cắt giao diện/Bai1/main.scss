@@ -306,12 +306,17 @@ body {
 
 //project
 .project {
-    margin-top: 12rem;
+    margin-top: 6rem;
+
+    &-container {
+        max-width: 160rem;
+    }
 
     &-header {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6rem;
     }
 
     &-heading {
@@ -320,11 +325,85 @@ body {
         max-width: 62rem;
         line-height: calc(76/70);
     }
+
     &-all {
         font-size: 2.4rem;
         width: 100%;
         max-width: 12.6rem;
         line-height: calc(30/24);
         color: var(--primary-color);
+    }
+
+    &-item {
+        height: 71.2rem;
+        position: relative;
+    }
+
+    &-img img {
+        max-width: 160rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &-info {
+        position: absolute;
+        bottom: 6.5rem;
+        left: 18%
+    }
+
+    &-name {
+        font-size: 5rem;
+        line-height: calc(62/50);
+        color: var(--white);
+        margin-bottom: 1rem;
+    }
+
+    &-link {
+        font-size: 3rem;
+        letter-spacing: -2px;
+        line-height: calc(30/24);
+        color: var(--white);
+    }
+}
+
+//designer
+.designer {
+    background-color: var(--primary-color);
+    padding-top: 16rem;
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-heading {
+        color: var(--white);
+        font-size: 7rem;
+        margin-bottom: 3rem;
+    }
+
+    &-content {
+        width: 100%;
+        max-width: 61.6rem;
+    }
+
+    &-content1 {
+        color: var(--white);
+        font-size: 2.4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &-content2 {
+        color: var(--white);
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+    }
+
+    &-link {
+        color: var(--white);
+        font-size: 2.4rem;
+        display: inline-block;
     }
 }

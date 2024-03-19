@@ -277,12 +277,16 @@ body {
 }
 
 .project {
-  margin-top: 12rem;
+  margin-top: 6rem;
+}
+.project-container {
+  max-width: 160rem;
 }
 .project-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6rem;
 }
 .project-heading {
   font-size: 7rem;
@@ -296,6 +300,67 @@ body {
   max-width: 12.6rem;
   line-height: 1.25;
   color: var(--primary-color);
+}
+.project-item {
+  height: 71.2rem;
+  position: relative;
+}
+.project-img img {
+  max-width: 160rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-info {
+  position: absolute;
+  bottom: 6.5rem;
+  left: 18%;
+}
+.project-name {
+  font-size: 5rem;
+  line-height: 1.24;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.project-link {
+  font-size: 3rem;
+  letter-spacing: -2px;
+  line-height: 1.25;
+  color: var(--white);
+}
+
+.designer {
+  background-color: var(--primary-color);
+  padding-top: 16rem;
+}
+.designer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.designer-heading {
+  color: var(--white);
+  font-size: 7rem;
+  margin-bottom: 3rem;
+}
+.designer-content {
+  width: 100%;
+  max-width: 61.6rem;
+}
+.designer-content1 {
+  color: var(--white);
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+}
+.designer-content2 {
+  color: var(--white);
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+.designer-link {
+  color: var(--white);
+  font-size: 2.4rem;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */
