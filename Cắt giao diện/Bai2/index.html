@@ -28,48 +28,74 @@
 <body>
   <div class="max-w-[1440px] mx-auto">
     <header class="pt-9 relative">
-      <div class="bg-[#BDCCFF] w-[35%] h-full absolute top-0 right-0 z-0">
+      <div class="hidden lg:block bg-[#BDCCFF] w-[35%] h-full absolute top-0 right-0 z-0">
       </div>
       <div class="layout-container relative z-10">
-        <div class="flex items-center justify-between mb-[117px]">
+        <div class="flex items-center justify-between mb-[50px] lg:mb-[117px]">
           <a href="index.html" class="font-extrabold text-[23px]">SmartSpace</a>
-          <ul class="flex items-center gap-x-[46px] font-dm text-[13px]">
+          <ul class="
+            fixed
+            top-0
+            right-0
+            bottom-0
+            w-[300px]
+            bg-white
+            lg:flex
+            lg:bg-transparent
+            z-50
+            lg:static lg:w-auto
+            items-center
+            gap-x-[46px]
+            font-dm
+            text-[13px]
+            transition-all
+            translate-x-full
+            lg:translate-x-0
+            lg:mt-0
+            mt-16
+          ">
             <li>
-              <a href="#" class="text back font-bold hover:underline transition-all">Home</a>
+              <a href="#" class="text back font-bold hover:underline transition-all p-5 lg:p-0 block">Home</a>
             </li>
             <li>
-              <a href="#" class="text back font-bold hover:underline transition-all">About</a>
+              <a href="#" class="text back font-bold hover:underline transition-all p-5 lg:p-0 block">About</a>
             </li>
             <li>
-              <a href="#" class="text back font-bold hover:underline transition-all">Service</a>
+              <a href="#" class="text back font-bold hover:underline transition-all p-5 lg:p-0 block">Service</a>
             </li>
             <li>
-              <a href="#" class="text back font-bold hover:underline transition-all">Portfolio</a>
+              <a href="#" class="text back font-bold hover:underline transition-all p-5 lg:p-0 block">Portfolio</a>
             </li>
             <li>
-              <a href="#" class="text back font-bold hover:underline transition-all">Blog</a>
+              <a href="#" class="text back font-bold hover:underline transition-all p-5 lg:p-0 block">Blog</a>
             </li>
             <li>
-              <a href="#" class="text back font-bold hover:underline transition-all">Contact</a>
+              <a href="#" class="text back font-bold hover:underline transition-all p-5 lg:p-0 block">Contact</a>
             </li>
           </ul>
+          <span class="text-3xl cursor-pointer mx-2 lg:hidden">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
         </div>
-        <div class="relative">
+        <div class="relative flex flex-col items-center gap-y-10 lg:block">
           <div class="relative z-10">
             <h3 class="uppercase mb-6 font-bold text-orangeff9 text-[22px]">RESIDENTIAL & OFFICE SPACES</h3>
-            <h1 class="mb-[23px] font-extrabold text-[54px] max-w-[484px]">Smart Living Style for Smart People</h1>
-            <p class="mb-12 text-[17px] max-w-[499px] text-gray31">Much did had call new drew that kept. Limits expect
+            <h1 class="mb-[23px] font-extrabold text-[30px] lg:text-[54px] max-w-[484px]">Smart Living Style for Smart
+              People</h1>
+            <p class="mb-12 text-sm lg:text-[17px] max-w-[499px] text-gray31">Much did had call new drew that kept.
+              Limits expect
               wonder law she. Now has you views woman noisy match money rooms.</p>
-            <div class="flex w-full max-w-[756px] bg-white border border-grayda mb-[145px]">
+            <div
+              class="flex flex-col lg:flex-row w-full max-w-[756px] bg-white border border-grayda mb-10 lg:mb-[145px]">
               <div class="items-center flex flex-1 p-5 gap-x-5">
                 <img src="./images/icon-house-search.svg" alt="">
                 <input type="text" placeholder="Enter Zipcode to search properties"
-                  class="flex-1 font-normal text-xl text-gray31">
+                  class="flex-1 font-normal text-[14px] lg:text-xl text-gray31">
               </div>
               <button class="text-white bg-orangef8 py-8 px-10 text-[17px] font-bold leading-none">Search Now!</button>
             </div>
             <p>Our Amazing Partners</p>
-            <div class="grid grid-cols-2 gap-5 lg:flex">
+            <div class="grid grid-cols-2 mt-7 gap-5 lg:flex gap-x-[20px] md:gap-x-[50px]">
               <img src="./images/buzz.png" alt="">
               <img src="./images/chase.png" alt="">
               <img src="./images/microsoft.png" alt="">
@@ -78,60 +104,64 @@
               <img src="./images/uber.png" alt="">
             </div>
           </div>
-          <div class="absolute top-0 right-0">
+          <div class="lg:absolute lg:top-0 lg:right-0">
             <img src="./images/header-image.png" alt="">
           </div>
         </div>
       </div>
     </header>
-    <main class="mt-[223px]">
+    <main class="mt-20 lg:mt-[223px]">
       <section>
-        <div class="layout-container relative">
-          <h2 class="text-center font-semibold text-[40px] mb-[70px]">How it works?</h2>
-          <div class="flex justify-between">
-
+        <div class="layout-container lg:relative">
+          <h2 class="text-center font-semibold text-[25px] mb-[50px] lg:mb-[70px]">How it works?</h2>
+          <div class="flex flex-col gap-y-6 lg:flex-row lg:justify-between">
             <div class="flex flex-col text-center items-center">
-              <div class="w-[90px] h-[90px] rounded-[20px] bg-[#9672FF] flex items-center justify-center mb-[50px]">
+              <div
+                class="w-[90px] h-[90px] rounded-[20px] bg-[#9672FF] flex items-center justify-center mb-8 lg:mb-[50px]">
                 <img src="./images/icon-search.svg" alt="">
               </div>
-              <img src="./images/line.png" alt="" class="absolute top-[44%] left-[22%]">
-              <h3 class="mb-4 font-semibold text-[22px]">Research Suburbs</h3>
-              <p class="text-[16px] font-roboto text-gray333 max-w-64">Wonder twenty hunted and put income set desire
+              <img src="./images/line.png" alt="" class="hidden lg:block lg:absolute lg:top-[39%] lg:left-[22%]">
+              <h3 class="lg:mb-4 mb-2 font-semibold text-[22px]">Research Suburbs</h3>
+              <p class="text-[16px] font-roboto text-gray333 lg:max-w-64">Wonder twenty hunted and put income set desire
                 expect. Am cottage calling.</p>
             </div>
 
             <div class="flex flex-col text-center items-center">
-              <div class="w-[90px] h-[90px] rounded-[20px] bg-[#4DDFFD] flex items-center justify-center mb-[50px]">
+              <div
+                class="w-[90px] h-[90px] rounded-[20px] bg-[#4DDFFD] flex items-center justify-center mb-8 lg:mb-[50px]">
                 <img src="./images/icon-hand.svg" alt="">
               </div>
-              <img src="./images/line1.png" alt="" class="absolute top-[44%] left-[60%]">
-              <h3 class="mb-4 font-semibold text-[22px]">Instant Valuation</h3>
-              <p class="text-[16px] font-roboto text-gray333 max-w-64">Conveying or northward offending admitting
+              <img src="./images/line1.png" alt="" class="hidden lg:block lg:absolute lg:top-[39%] lg:left-[60%]">
+              <h3 class="lg:mb-4 mb-2 font-semibold text-[22px]">Instant Valuation</h3>
+              <p class="text-[16px] font-roboto text-gray333 lg:max-w-64">Conveying or northward offending admitting
                 perfectly my. Colonel gravit and moonlight.</p>
             </div>
 
             <div class="flex flex-col text-center items-center">
-              <div class="w-[90px] h-[90px] rounded-[20px] bg-[#F2B8EC] flex items-center justify-center mb-[50px]">
+              <div
+                class="w-[90px] h-[90px] rounded-[20px] bg-[#F2B8EC] flex items-center justify-center mb-8 lg:mb-[50px]">
                 <img src="./images/icon-building.svg" alt="">
               </div>
-              <h3 class="mb-4 font-semibold text-[22px]">Track Property</h3>
-              <p class="text-[16px] font-roboto text-gray333 max-w-64">Moderate children at of outweigh it. Unsatiable
+              <h3 class="lg:mb-4 font-semibold text-[22px]">Track Property</h3>
+              <p class="text-[16px] mb-2 font-roboto text-gray333 lg:max-w-64">Moderate children at of outweigh it.
+                Unsatiable
                 it considered invitation he travelling insensible.</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="mt-[225px] pb-[123px]">
+      <section class="mt-20 pb-20 lg:mt-[225px] lg:pb-[123px]">
         <div class="layout-container">
-          <div class="flex items-start justify-between mb-[50px]">
-            <div class="max-w-[470px]">
-              <h2 class="font-semibold text-[40px] mb-[15px]">Best Real Estate Deals</h2>
+          <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between  mb-[50px] gap-y-2">
+            <div class="lg:max-w-[470px] lg:flex lg:flex-col lg:items-center">
+              <h2 class="font-semibold text-[25px] text-center lg:text-right lg:text-[40px] lg:mb-[15px]">Best Real
+                Estate Deals</h2>
               <p class="tex-[16px]">Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income
                 set desire expect.</p>
             </div>
-            <a href="" class="bg-[#F85A47] text-[17px] px-[30px] py-[20px]">View All Property</a>
+            <a href="" class="bg-[#F85A47] text-[17px] px-[30px] py-[20px] text-white rounded-md">View All Property</a>
           </div>
-          <div class="flex gap-x-[54px] mb-[54px]">
+          <div class="flex gap-x-[54px] mb-[54px] overflow-x-auto whitespace-nowrap">
             <a href="#"
               class="font-semibold text-19 pb-3 border-b border-transparent transition-all hover:border-orangef8 hover:text-orangef8">Residential
               Property</a>
@@ -145,9 +175,9 @@
               class="font-semibold text-19 pb-3 border-b border-transparent transition-all hover:border-orangef8 hover:text-orangef8">Industrial
               Property</a>
           </div>
-          <div class="flex gap-x-[30px]">
+          <div class="grid grid-cols-1 gap-y-5 lg:grid-cols-3 gap-x-[30px]">
             <div class="relative">
-              <img src="./images/house1.jpg" alt="">
+              <img src="./images/house1.jpg" alt="" class="w-full h-full object-cover">
               <div class="absolute  top-[5%] left-[5%]">
                 <span
                   class="bg-[#000000] opacity-40 mr-[6px] inline-block py-2 px-3 text-white border border-white rounded-md">Featured</span>
@@ -156,7 +186,7 @@
               </div>
             </div>
             <div class="relative">
-              <img src="./images/house2.jpg" alt="">
+              <img src="./images/house2.jpg" alt="" class="w-full h-full object-cover">
               <div class="absolute top-[5%] left-[5%]">
                 <span
                   class="bg-[#000000] opacity-40 mr-[6px] inline-block py-2 px-3 text-white border border-white rounded-md">Featured</span>
@@ -165,7 +195,7 @@
               </div>
             </div>
             <div class="relative">
-              <img src="./images/house3.jpg" alt="">
+              <img src="./images/house3.jpg" alt="" class="w-full h-full object-cover">
               <div class="absolute top-[5%] left-[5%]">
                 <span
                   class="bg-[#000000] opacity-40 py-2 px-3 inline-block text-white border border-white rounded-md">Featured</span>
@@ -174,16 +204,19 @@
           </div>
         </div>
       </section>
-      <section class="mt-[120px]">
+      <section class="lg:mt-[120px]">
         <div class="layout-container">
-          <h2 class="text-center font-semibold text-[40px] mb-28">Featured Listing of the Week</h2>
-          <div class="flex gap-x-[77px] mb-[278px]">
-            <div class="relative max-w-[492px] w-full">
+          <h2 class="text-center font-semibold text-[25px] lg:text-[40px] mb-12 lg:mb-28">Featured Listing of the Week
+          </h2>
+          <div class="flex flex-col lg:flex-row gap-x-[77px] mb-24 lg:mb-[278px]">
+            <div class="mx-auto lg:relative max-w-[492px] w-full">
               <img src="./images/MaskGroup.png" alt="">
-              <img src="./images/Image.png" alt="" class="absolute left-[50%] translate-x-[-50%] bottom-0">
+              <img src="./images/Image.png" alt=""
+                class="mx-auto mt-3 lg:mt-0 lg:absolute lg:left-[50%] lg:translate-x-[-50%] lg:bottom-0">
             </div>
-            <div class="w-full">
-              <h3 class="font-semibold text-[31px] mb-7">The and collecting for the motionless difficulty son.</h3>
+            <div class="w-full mt-5 lg-mt-0">
+              <h3 class="font-semibold text-[22px] lg:text-[31px] mb-7">The and collecting for the motionless difficulty
+                son.</h3>
               <p class="text-[16px] mb-[42px]">Conveying or northward offending admitting perfectly my. Colonel gravity
                 get
                 thought fat smiling add but difficult situations.</p>
@@ -224,20 +257,21 @@
       </section>
       <section>
         <div class="layout-container">
-          <h2 class="text-[40px] font-semibold max-w-[570px]">Loved by businesses, and individuals across the globe.
+          <h2 class="text-[25px] lg:text-[40px] font-semibold max-w-[570px]">Loved by businesses, and individuals across
+            the globe.
           </h2>
-          <div class="flex justify-between">
-            <div class="w-full max-w-[380px] mt-[103px]">
-              <div class="mb-8">
+          <div class="flex flex-col gap-y-10 lg:flex-row lg:justify-between">
+            <div class="w-full lg:max-w-[380px] lg:mt-[103px] mt-10">
+              <div class="lg:mb-8">
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
               </div>
-              <p class="max-w-[270px] text-[16px]">Moderate children at of outweigh it. Unsatiable it considered
+              <p class="lg:max-w-[270px] text-[16px]">Moderate children at of outweigh it. Unsatiable it considered
                 invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
-              <div class="flex gap-x-[20px] items-center mt-[60px]">
+              <div class="flex gap-x-[20px] items-center lg:mt-[60px]">
                 <img src="./images/JaneCooper.png" alt="">
                 <div>
                   <p class="font-bold text-[16px] text-[#333333]">Jane Cooper</p>
@@ -245,17 +279,18 @@
                 </div>
               </div>
             </div>
-            <div class="w-full max-w-[380px] mt-[103px]">
-              <div class="mb-8">
+            <div class="w-full lg:max-w-[380px] lg:mt-[103px]">
+              <div class="lg:mb-8">
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
               </div>
-              <p class="max-w-[270px] text-[16px]">The and collecting motionless difficulty son. His hearing staying ten
+              <p class="lg:max-w-[270px] text-[16px]">The and collecting motionless difficulty son. His hearing staying
+                ten
                 colonel met. Sex drew six easy four dear cold</p>
-              <div class="flex gap-x-[20px] items-center mt-[60px]">
+              <div class="flex gap-x-[20px] items-center lg:mt-[60px]">
                 <img src="./images/RobertFox.png" alt="">
                 <div>
                   <p class="font-bold text-[16px] text-[#333333]">Robert Fox</p>
@@ -263,17 +298,17 @@
                 </div>
               </div>
             </div>
-            <div class="w-full max-w-[380px] mt-[103px]">
-              <div class="mb-8">
+            <div class="w-full lg:max-w-[380px] lg:mt-[103px]">
+              <div class="lg:mb-8">
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
                 <span class="fa fa-star text-orange-400"></span>
               </div>
-              <p class="max-w-[270px] text-[16px]">Sociable on as carriage my position weddings raillery consider.
+              <p class="lg:max-w-[270px] text-[16px]">Sociable on as carriage my position weddings raillery consider.
                 Peculiar trifling absolute and wandered vicinity property yet.</p>
-              <div class="flex gap-x-[20px] items-center mt-[60px]">
+              <div class="flex gap-x-[20px] items-center lg:mt-[60px]">
                 <img src="./images/LeslieAlexander.png" alt="">
                 <div>
                   <p class="font-bold text-[16px] text-[#333333]">Leslie Alexander</p>
@@ -282,8 +317,8 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-between items-center mt-[158px]">
-            <div class="flex gap-x-20">
+          <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center lg:mt-[158px]">
+            <div class="flex gap-x-10 lg:gap-x-20 my-5 lg:my-0 flex-wrap">
               <img src="./images/arbnb.svg" alt="">
               <img src="./images/cisco.svg" alt="">
               <img src="./images/ebay.svg" alt="">
@@ -298,22 +333,25 @@
           </div>
         </div>
       </section>
-      <footer class="mt-[372px] bg-[#FBFCFC] pb-[36px]">
+      <footer class="mt-32 lg:mt-[372px] bg-[#FBFCFC] pb-[36px]">
         <div class="layout-container">
-          <h2 class="text-center text-[45px] font-bold mb-[11px] text-[#31353B]">Get Our Newsletter</h2>
-          <p class="text-center text-2xl text-[#31353B] font-bold">To join the worldwide community</p>
+          <h2 class="text-center text-[25px] lg:text-[45px] font-bold mb-[11px] text-[#31353B]">Get Our Newsletter</h2>
+          <p class="text-center text-[22px] lg:text-2xl text-[#31353B] font-bold">To join the worldwide community</p>
           <div class="border border-b border-b-[#DEDFE1] pb-10 mt-9">
-            <div class="shadow-white flex justify-between max-w-[686px] mx-auto px-[26px] py-[30px] items-center gap-y-5">
+            <div
+              class="shadow-white flex flex-col lg:flex-row lg:justify-between max-w-[686px] mx-auto px-[26px] py-[30px] items-center gap-y-5">
               <div class="flex flex-col flex-1">
                 <label for="" class="text-[#31353B] font-medium opacity-20">Type your Email Address</label>
-                <input placeholder="shakir260@gmail.com" value="shakir260@gmail.com" type="text" name="" id="">
+                <input placeholder="shakir260@gmail.com" value="shakir260@gmail.com" type="text" name="" id=""
+                  class="font-bold">
               </div>
-              <button type="submit" class="py-[23px] px-[40px] bg-orangef8 w-full max-w-[167px]">Send Now</button>
+              <button type="submit" class="text-white py-[23px] px-[40px] bg-orangef8 w-full max-w-[167px]">Send
+                Now</button>
             </div>
           </div>
-          <div class="flex justify-between mt-[61px]">
+          <div class="hidden lg:flex lg:justify-between mt-[61px]">
             <a href="" class="font-extrabold text-[23px] text-gray31">SmartSpace</a>
-            <ul class="flex gap-x-[46px] text-gray31 font-bold text-[13px] ">
+            <ul class="flex gap-x-[46px] text-gray31 font-bold text-[13px]">
               <li>
                 <a href="" class="hover:underline transition-all">Home</a>
               </li>
@@ -334,11 +372,14 @@
               </li>
             </ul>
           </div>
-          <p class="text-center text-gray31 font-dm text-[12px] font-bold mt-6">Copyright © 2021 AR Shakir . All Rights Reseved.</p>
+          <p class="text-center text-gray31 font-dm text-[12px] font-bold mt-6">Copyright © 2021 AR Shakir . All Rights
+            Reseved.</p>
         </div>
       </footer>
     </main>
   </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="./src/main.js"></script>
 </body>
-
 </html>
