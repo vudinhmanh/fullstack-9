@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="fa-solid fa-chevron-down"></i>
+            <span>Now Playing</span>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="img-music">
+            <img src="./img/music-1.jpg" alt="">
+        </div>
+        <div class="song-detail">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+                <span></span>
+            </div>
+            <audio  id="audio" src="./songs/music-1.mp3"></audio>
+        </div>
+        <div class="time-music">
+            <span class="current">1: 20</span>
+            <span class="end">3: 12</span>
+        </div>
+        <div class="control">   
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-backward preBtn"></i>
+            <div class="pause-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <i class="fa-solid fa-forward nextBtn"></i>
+            <i class="fa-solid fa-repeat"></i>
+        </div>
+    </div>
+    <!-- <img src="./img/music-2.jpg" alt=""> -->
+    <script src="./music-list.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

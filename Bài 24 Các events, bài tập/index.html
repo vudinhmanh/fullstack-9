@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="btn">Click</button>
+    <input type="text" id="input"> -->
+    <!-- <button toggleController data-toggle-target="#content1" class="btn">Ẩn / hiện</button>
+    <div id="content1">
+        vuDinhManh
+    </div>
+    <button toggleController data-toggle-target="#content2" class="btn">Ẩn / hiện</button>
+    <div id="content2">
+        vuDinhManh
+    </div> -->
+    <style>
+        .accordion > li > ul{
+            display: none;
+        }
+        .accordion > li.active > ul {
+            display: block;
+        }
+    </style>
+    <ul class="accordion">
+        <li>
+            <a href="#">JS</a>
+            <ul>
+                <li>
+                    <a href="#">Js co ban</a>
+                </li>
+                <li>
+                    <a href="#">Js nang cao</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">PHP</a>
+            <ul>
+                <li>
+                    <a href="#">PHP co ban</a>
+                </li>
+                <li>
+                    <a href="#">PHP nang cao</a>
+                </li>
+            </ul>
+        </li> 
+    </ul>
+</body>
+<script src="./script.js"></script>
+</html>

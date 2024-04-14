@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 25: Chữa bài tập + code player</title>
+    <style>
+        #rangeWrap {
+            height: 7px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        #range {
+            height: 7px;
+            background-color:burlywood;
+        }
+        .wrapper {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <audio id="audio" controls>
+        <source >
+    </audio>
+    <div class="wrapper">
+        <div id="timeStart">
+
+        </div>
+        <div id="rangeWrap">
+            <div id="range">
+            </div>
+        </div>
+        <div id="timeEnd">
+            345
+        </div>
+    </div>
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+</body>
+<script src="./script.js"></script>
+</html> 
