@@ -6,8 +6,13 @@ const wrapper = document.querySelector(".wrapper"),
   playPauseBtn = document.querySelector(".pause-btn i"),
   preBtn = document.querySelector(".preBtn"),
   nextBtn = document.querySelector(".nextBtn"),
-  progressBar = document.querySelector(".progress-bar");
+  progressBar = document.querySelector(".progress-bar"),
+  musicCurrentTime = document.querySelector(".currentTime"),
+  endTime = document.querySelector(".endTime"),
+  progressArea = document.querySelector(".progress-area"),
+  btnShuffle = document.querySelector(".btnShuffle");
 let musicIndex = 0;
+// console.log(btnShuffle);
 // console.log(pauseBtn);
 window.addEventListener("load", () => {
   loadMusic(musicIndex);
@@ -17,7 +22,6 @@ const loadMusic = (indexNumber) => {
   musicArtist.innerText = allMusic[indexNumber].artist;
   musicImg.src = `./img/${allMusic[indexNumber].img}.jpg`;
   audio.src = `./songs/${allMusic[indexNumber].src}.mp3`;
-  console.log(audio.src);
 };
 const playMusic = () => {
   playPauseBtn.classList.remove("fa-play");
@@ -43,6 +47,7 @@ nextBtn.addEventListener("click", () => {
     musicIndex = 0;
   }
   loadMusic(musicIndex);
+  playMusic();
 });
 preBtn.addEventListener("click", () => {
   musicIndex--;
@@ -50,8 +55,63 @@ preBtn.addEventListener("click", () => {
     musicIndex = allMusic.length - 1;
   }
   loadMusic(musicIndex);
+  playMusic();
 });
 audio.addEventListener("timeupdate", (e) => {
-  console.log(e);
-  console.log(e.duration);
+  let currentTime = e.target.currentTime;
+  let duration = e.target.duration;
+  const progressWidth = (currentTime / duration) * 100;
+  progressBar.style.width = `${progressWidth}%`;
+  // console.log(currentTime);
+  let currentMin = Math.floor(currentTime / 60);
+  let currentSec = Math.floor(currentTime % 60);
+  if (currentSec < 10) {
+    currentSec = `0${currentSec}`;
+  }
+  musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
+  audio.addEventListener("loadeddata", () => {
+    let audioDuration = audio.duration;
+    let totalMin = Math.floor(audioDuration / 60);
+    let totalSec = Math.floor(audioDuration % 60);
+    if (totalSec < 10) {
+      totalSec = `0${totalSec}`;
+    }
+    endTime.innerText = `${totalMin}:${totalSec}`;
+  });
 });
+progressArea.addEventListener("click", (e) => {
+  let maxWBar = progressArea.clientWidth;
+  let percent = e.offsetX / maxWBar;
+  let songDuration = audio.duration;
+  audio.currentTime = percent * songDuration;
+  playMusic();
+});
+let dragging = false;
+
+progressArea.addEventListener("mousedown", () => (dragging = true));
+progressArea.addEventListener("mouseup", () => (dragging = false));
+
+progressArea.addEventListener("mousemove", (e) => {
+  if (!dragging) return;
+  const maxWBar = progressArea.clientWidth;
+  const percent = e.offsetX / maxWBar;
+  audio.currentTime = percent * audio.duration;
+  playMusic();
+});
+
+btnShuffle.addEventListener("click", () => {
+  if (btnShuffle.classList.contains("fa-shuffle")) {
+    btnShuffle.classList.add("fa-repeat");
+    btnShuffle.classList.remove("fa-shuffle");
+  } else {
+    btnShuffle.classList.add("fa-shuffle");
+    btnShuffle.classList.remove("fa-repeat");
+  }
+});
+const repeatOneMusic = () => {
+  if (btnShuffle.classList.contains("fa-repeat")) {
+    audio.currentTime = 0;
+    loadMusic(musicIndex);
+    playMusic();
+  }
+};

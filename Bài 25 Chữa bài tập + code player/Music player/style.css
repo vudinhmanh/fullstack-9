@@ -52,6 +52,7 @@ body {
 .song-detail {
     text-align: center;
     color: var(--lightblack);
+    margin-bottom: 20px;
 }
 
 .song-detail .name {
@@ -68,15 +69,15 @@ body {
     width: 100%;
     border-radius: 50px;
     cursor: pointer;
-    background-color: #ff74a4;
+    background: #f0f0f0;
+    margin-bottom: 10px;
 }
 
 .progress-area .progress-bar {
     height: inherit;
-    width: 50%;
     position: relative;
     border-radius: inherit;
-    background-color: aqua;
+    background: linear-gradient(90deg, var(--pink) 0%, var(--violet) 100%);
 }
 .progress-bar::before {
     content: "";
