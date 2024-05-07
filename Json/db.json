@@ -1,0 +1,34 @@
+{
+  "Player": [
+    {
+      "id": "0dab",
+      "name": "Le Van Nam",
+      "address": "Ha Noi"
+    },
+    {
+      "id": "9563",
+      "name": "Trinh Thu Ha",
+      "address": "Ha Noi"
+    },
+    {
+      "id": "2503",
+      "name": "Le Thi Ha",
+      "address": "Hai Duong"
+    },
+    {
+      "id": "4c9f",
+      "name": "Vu Dinh Nam",
+      "address": "Ha Noi"
+    },
+    {
+      "id": "e968",
+      "name": "Vu Dinh Manh",
+      "address": "Ha Noi"
+    },
+    {
+      "id": "e238",
+      "name": "Vu Van Ha",
+      "address": "Thanh Hoa"
+    }
+  ]
+}
