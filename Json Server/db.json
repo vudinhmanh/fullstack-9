@@ -1,0 +1,79 @@
+{
+    "students":[
+        {
+            "id":1,
+            "name":"Vu Dinh Manh",
+            "class":"HTTT01"
+        },
+        {
+            "id":2,
+            "name":"Vu Dinh Nam",
+            "class":"HTTT02"
+        },
+        {
+            "id":3,
+            "name":"Vu Van Tuan",
+            "class":"HTTT01"
+        },
+        {
+            "id":4,
+            "name":"Dam Duc Dung",
+            "class":"HTTT02"
+        },
+        {
+            "id":5,
+            "name":"Le Dinh Nam",
+            "class":"HTTT01"
+        },
+        {
+            "id":6,
+            "name":"Tran Van Hai",
+            "class":"HTTT01"
+        },
+        {
+            "id":7,
+            "name":"Luong Thi Van",
+            "class":"HTTT01"
+        },
+        {
+            "id":8,
+            "name":"Tran Xuan Nam",
+            "class":"HTTT01"
+        },
+        {
+            "id":9,
+            "name":"Lo Van Ha",
+            "class":"HTTT01"
+        },
+        {
+            "id":10,
+            "name":"Nguyen Dinh Tu",
+            "class":"HTTT01"
+        },
+        {
+            "id":11,
+            "name":"Nguyen Hoang Tuan",
+            "class":"HTTT01"
+        },
+        {
+            "id":12,
+            "name":"Nghiem Van Hai",
+            "class":"HTTT01"
+        },
+        {
+            "id":13,
+            "name":"Tran Khac Nam",
+            "class":"HTTT01"
+        },
+        {
+            "id":14,
+            "name":"Dam Dinh Tung",
+            "class":"HTTT01"
+        },
+        {
+            "id":15,
+            "name":"Tran Danh Hieu",
+            "class":"HTTT01"
+        }
+    ]
+}
